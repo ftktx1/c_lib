@@ -6,13 +6,15 @@
 /*   By: kshimek <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/26 16:00:55 by kshimek           #+#    #+#             */
-/*   Updated: 2018/03/05 16:50:02 by kshimek          ###   ########.fr       */
+/*   Updated: 2018/03/06 15:21:27 by kshimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
+
+void	*ft_memset(void *b, int c, size_t len);
 
 typedef struct	s_list
 {
