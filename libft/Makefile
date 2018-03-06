@@ -6,16 +6,16 @@
 #    By: kshimek <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/26 15:59:53 by kshimek           #+#    #+#              #
-#    Updated: 2018/02/26 16:00:20 by kshimek          ###   ########.fr        #
+#    Updated: 2018/03/06 15:15:48 by kshimek          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 ANAME = libft.a
 ENAME = ft_display_file
 
-SRC = $(wildcard srcs/*.c)
-INC = $(wildcard includes/)
-OBJ = $(patsubst srcs/%.c, %.o, $(SRC))
+SRC = $(wildcard *.c)
+INC = $(wildcard *.h)
+OBJ = $(patsubst %.c, %.o, $(SRC))
 GGCFLAGS = -Wall -Wextra -Werror
 
 all: $(ANAME)
