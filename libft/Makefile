@@ -6,22 +6,22 @@
 #    By: kshimek <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/26 15:59:53 by kshimek           #+#    #+#              #
-#    Updated: 2018/03/06 15:15:48 by kshimek          ###   ########.fr        #
+#    Updated: 2018/03/06 16:30:09 by kshimek          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 ANAME = libft.a
 ENAME = ft_display_file
 
-SRC = $(wildcard *.c)
-INC = $(wildcard *.h)
+SRC = $(ft_putchar.c, ft_putstr.c, ft_memset.c, main.c)
+INC = $(*.h)
 OBJ = $(patsubst %.c, %.o, $(SRC))
-GGCFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 
 all: $(ANAME)
 
 $(ANAME):
-	gcc $(GGCFLAGS) -c $(SRC) -I$(INC)
+	gcc $(CFLAGS) -c $(SRC) -I $(INC)
 	ar rc $(ANAME) $(OBJ)
 	ranlib $(ANAME)
 	gcc -o $(ENAME) $(ANAME) $(OBJ)

@@ -6,11 +6,11 @@
 /*   By: kshimek <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/26 11:51:07 by kshimek           #+#    #+#             */
-/*   Updated: 2018/03/06 08:41:12 by kshimek          ###   ########.fr       */
+/*   Updated: 2018/03/06 15:26:55 by kshimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_putchar.c"
+#include "libft.h"
 
 void	ft_putstr(char const *s)
 {
